@@ -1,0 +1,27 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: Johnslist_development
+  pool: 5
+  username: postgres
+  password: password1
+
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  database: Johnslist_test
+  pool: 5
+  username: postgres
+  password: password1
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: Johnslist_production
+  pool: 5
+  username: postgres
+  password: password1
+
+cucumber:
+  <<: *test
