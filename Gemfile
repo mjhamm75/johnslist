@@ -9,6 +9,7 @@ gem 'bcrypt-ruby', '3.0.1'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
+  gem 'pry'
 end
 
 group :test do
