@@ -1,1 +1,1 @@
-# Craiglist type app
+# This is Michael Hartls tutuorial up to the last chapter.
