@@ -3,7 +3,7 @@ class MicropostsController < ApplicationController
   before_action :correct_user,   only: :destroy
 
   def index
-        @microposts = Micropost.paginate(page: params[:page])
+    @microposts = Micropost.paginate(page: params[:page])
   end
 
   def create
@@ -25,7 +25,7 @@ class MicropostsController < ApplicationController
   private
 
   def micropost_params
-    params.require(:micropost).permit(:content)
+    params.require(:micropost).permit(:content, :title)
   end
 
   def correct_user
