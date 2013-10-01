@@ -1,0 +1,5 @@
+<h1><%= @micropost.title %></h1>
+<p><%= @micropost.content %></p>
+<% if !signed_in? %>
+  <%= link_to "Contact Owner", contact_path, class: "btn btn-large btn-primary contact-owner" %>
+<% end %>

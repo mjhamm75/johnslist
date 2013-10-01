@@ -1,6 +1,7 @@
 <% provide(:title, 'Contact') %>
-<h1>Contact</h1>
-<p>
-  If you are in need of help, contact <a href="http://railstutorial.org/contact">John</a> with any questions.
-
-</p>
+<h1>Contact Owner</h1>
+<%= form_tag "#" do %>
+  <%= text_field_tag 'subject', nil, :placeholder => 'Email subject ...' %>
+  <%= text_area_tag 'content', nil, :placeholder => 'Email content ...', :size => "25x10" %>
+  <%= submit_tag "Submit", :class => 'btn btn-large btn-primary' %>
+<% end %>
